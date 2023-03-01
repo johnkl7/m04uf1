@@ -1,12 +1,9 @@
 # Código y documentación M04-UF1 
 Ciberseguridad: Lenguaje de marcas m04uf1
 
-## XML
+## XML - _Aqui iran los apuntes de **XML**_
 
-### _Aqui iran los apuntes de **XML**_
-
-
-La cabezera en cada archivo tiene que ser contener lo siguiente: 
+La cabezera en cada archivo tiene que ser contener la siguiente: 
 ```XML
 <?xml versión=”1.0” enconding=”UTF-8?>
 ```
