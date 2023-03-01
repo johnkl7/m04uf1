@@ -11,8 +11,8 @@ La cabezera en cada archivo tiene que ser contener lo siguiente:
 ```
 
 Existen dos tipos de etiquetas:
-* ```XML<class></class>```: Etiquetas par.
-*  ```XML<tienelaeso />```: Etiquetas impar.
+* ```<class></class>```: Etiquetas par.
+*  ```<tienelaeso />```: Etiquetas impar.
 
 
 
