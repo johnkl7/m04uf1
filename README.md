@@ -52,3 +52,6 @@ println("You entered = $integer)}
 - [x] Segunda tarea
 - [ ] Tercera tarea
 
+### Carácteres extendido
+
+:yum: :flushed:
