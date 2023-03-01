@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<character>
+	<name>Messi</name>
+	<surname>Mendoza</surname>
+	<!-- COMENTARIO -->
+	<age years="50" />
+	<race>Gigante</race>
+	<class>Healer</class>
+	<gender abbrev="N">Non-binary</gender>
+	<height cm="1.6" />
+	<weight kg="1000" />
+	<language abbrev="EUK">Portugués</language>
+	<tienelaeso />
+</character>

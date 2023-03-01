@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<character>
+	<name>Mortadelo</name>
+	<surname>Mendoza</surname>
+	<!-- COMENTARIO -->
+	<age years="20" />
+	<race>Centauro</race>
+	<class>Arquero</class>
+	<gender abbrev="M">Masculino</gender>
+	<height cm="3.5" />
+	<weight kg="200" />
+	<language abbrev="ELL">Portugués</language>
+	<tienelaeso />
+</character>
