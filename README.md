@@ -55,3 +55,13 @@ println("You entered = $integer)}
 ### Carácteres extendido
 
 :yum: :flushed:
+
+## Estilo de carácteres
+
+*cursiva* _cursiva_
+
+**negrita** __negrita__
+
+~~TACHADO~~
+
+~~***tachado negrita y cursiva***~~
