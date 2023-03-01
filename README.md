@@ -26,7 +26,7 @@ Hay dos formatos de archivo que nos permiten validar XML:
 * XSD
 * DTD
 
-DTD es el mas utilizado hoy en dia. Ocupa menos y no hace falta introducir tantas etiquetas.
+>DTD es el mas utilizado hoy en dia. Ocupa menos y no hace falta introducir tantas etiquetas.
 
 ## DTD
 Los _apuntes_ de DTD
