@@ -3,6 +3,12 @@ Ciberseguridad: Lenguaje de marcas m04uf1
 
 ## XML - _Aqui iran los apuntes de **XML**_
 
+### INTRODUCCIÓN
+
+
+
+### CABEZERA
+
 La cabezera de cada archivo tiene que ser la siguiente: 
 ```XML
 <?xml versión=”1.0” enconding=”UTF-8?>
