@@ -5,18 +5,25 @@ Ciberseguridad: Lenguaje de marcas m04uf1
 
 ### _Aqui iran los apuntes de **XML**_
 
+
 La cabezera en cada archivo tiene que ser contener lo siguiente: 
 ```XML
 <?xml versión=”1.0” enconding=”UTF-8?>
 ```
 
 Existen dos tipos de etiquetas:
-* ```<class></class>```: Etiquetas par.
-*  ```<tienelaeso />```: Etiquetas impar.
+* ```<class></class>```: Etiquetas par. Se cierra con otra etiqueta.
+*  ```<age value = "197" />```: Etiquetas impar. Cierra la misma etiqueta.
 
+Una vez se ha creado un tipo de etiqueta u otro para un personaje, todos deben tener la misma.
 
+### __VALIDACIÓN__
 
+Hay dos formatos de archivo que nos permiten validar XML:
+* XSD
+* DTD
 
+DTD es el mas utilizado hoy en dia. Ocupa menos y no hace falta introducir tantas etiquetas.
 
 ## DTD
 Los _apuntes_ de DTD
