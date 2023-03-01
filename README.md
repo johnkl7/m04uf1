@@ -6,6 +6,23 @@ Ciberseguridad: Lenguaje de marcas m04uf1
 ### QUE ES XML
 El lenguaje de marcado extensible (XML) permite definir y almacenar datos de forma compartible. XML admite el intercambio de información entre sistemas de computación, como sitios web, bases de datos y aplicaciones de terceros. Las reglas predefinidas facilitan la transmisión de datos como archivos XML a través de cualquier red, ya que el destinatario puede usar esas reglas para leer los datos de forma precisa y eficiente.
 
+### EJEMPLO DE CODIGO XML
+
+```XML <?xml version="1.0" encoding="UTF-8" ?>
+<character>
+	<name>Messi</name>
+	<surname>Mendoza</surname>
+	<!-- COMENTARIO -->
+	<age years="50" />
+	<race>Gigante</race>
+	<class>Healer</class>
+	<gender abbrev="N">Non-binary</gender>
+	<height cm="1.6" />
+	<weight kg="1000" />
+	<language abbrev="EUK">Portugués</language>
+	<tienelaeso />
+</character>
+```
 
 ### CABEZERA
 
