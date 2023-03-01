@@ -4,14 +4,19 @@ Ciberseguridad: Lenguaje de marcas m04uf1
 ## XML
 Aqui iran los apuntes de **XML**
 
+## DTD
+Los _apuntes_ de DTD
+
+
+## MARKDOWN
+
+### LISTAS
+
 * uno
 * dos 
 	* sub apartado de 2
 	* otro más
 * tres
-
-## DTD
-Los _apuntes_ de DTD
 
 > Un gran poder conlleva
 >
@@ -65,3 +70,12 @@ println("You entered = $integer)}
 ~~TACHADO~~
 
 ~~***tachado negrita y cursiva***~~
+
+
+### Tablas
+
+| id_character | name | age | level |
+| --- | --- | --- | --- |
+| 1 | Eustaquio | 197 | 99 |
+| 2 | Mariana | 20 | 100 |
+| 3 | Messi | 44 | 32 |
