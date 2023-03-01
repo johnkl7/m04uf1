@@ -46,3 +46,9 @@ var integer:Int = stringInput.toInt()
 
 println("You entered = $integer)}
 ```
+
+### Listas de tareas
+- [ ] Primera tarea
+- [x] Segunda tarea
+- [ ] Tercera tarea
+
