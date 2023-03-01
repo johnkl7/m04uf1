@@ -5,7 +5,8 @@ Ciberseguridad: Lenguaje de marcas m04uf1
 
 ### _Aqui iran los apuntes de **XML**_
 
-La cabezera en cada archivo tiene que ser contener lo siguiente: **<?xml versión=”1.0” enconding=”UTF-8  ?>**
+La cabezera en cada archivo tiene que ser contener lo siguiente: 
+**<?xml versión=”1.0” enconding=”UTF-8  ?>**
 
 Existen dos tipos de etiquetas:
 * <class></class> : Etiquetas par.
