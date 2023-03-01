@@ -78,4 +78,5 @@ println("You entered = $integer)}
 | --- | --- | --- | --- |
 | 1 | Eustaquio | 197 | 99 |
 | 2 | Mariana | 20 | 100 |
-| 3 | Messi | 44 | 32 |
+| 3 | Mortadelo | 100 | 1 |
+| 4 | Messi | 44 | 32 |
