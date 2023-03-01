@@ -3,8 +3,8 @@ Ciberseguridad: Lenguaje de marcas m04uf1
 
 ## XML - _Aqui iran los apuntes de **XML**_
 
-### INTRODUCCIÓN
-
+### QUE ES XML
+El lenguaje de marcado extensible (XML) permite definir y almacenar datos de forma compartible. XML admite el intercambio de información entre sistemas de computación, como sitios web, bases de datos y aplicaciones de terceros. Las reglas predefinidas facilitan la transmisión de datos como archivos XML a través de cualquier red, ya que el destinatario puede usar esas reglas para leer los datos de forma precisa y eficiente.
 
 
 ### CABEZERA
