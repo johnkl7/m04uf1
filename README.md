@@ -30,4 +30,6 @@ Un enlace a la mejor web del mundo:
 
 [CondorChem](https://conderchem.com)
 Y [ESTO](https://enti.cat) es otro enlace.
+### Imagen incrustada
+![El Osito](https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Udyr_3.jpg)
 
