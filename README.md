@@ -2,10 +2,23 @@
 Ciberseguridad: Lenguaje de marcas m04uf1
 
 ## XML
-Aqui iran los apuntes de **XML**
+
+### _Aqui iran los apuntes de **XML**_
+
+La cabezera en cada archivo tiene que ser contener lo siguiente: **<?xml versión=”1.0” enconding=”UTF-8  ?>**
+
+Existen dos tipos de etiquetas:
+* <class></class> : Etiquetas par.
+* <tienelaeso />: Etiquetas impar.
+
+
+
+
 
 ## DTD
 Los _apuntes_ de DTD
+
+
 
 
 ## MARKDOWN
@@ -75,8 +88,19 @@ println("You entered = $integer)}
 ### Tablas
 
 | id_character | name | age | level |
-| --- | --- | --- | --- |
+| ---: | ---: | ---: | ---: |
 | 1 | Eustaquio | 197 | 99 |
 | 2 | Mariana | 20 | 100 |
 | 3 | Mortadelo | 100 | 1 |
 | 4 | Messi | 44 | 32 |
+
+### Escapar caracteres
+
+\# ejemplo de escapado
+
+\*que en otras cosas*
+
+
+
+
+
