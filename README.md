@@ -208,7 +208,8 @@ Las etiquetas **ul** se utilizan para hacer listas.
 * ```<li></li>``` : li se utiliza para los elementos de la lista. (list elements)
 
 Ejemplo:
-``` HTML <ul>
+```
+ HTML <ul>
 	<li>Manzanas</li>
 	<li>Peras</li>
 	<li>Limones</li>
