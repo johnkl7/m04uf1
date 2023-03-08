@@ -248,3 +248,5 @@ El texto alternativo sirve para que el enlace siga funcionando aunque la imagen 
 Todo elemento de bloque tiene:
 * MARGIN: Margen exterior.
 * PADDING: Margen interior.
+
+>El body a su vez tiene su propio MARGIN. Esta empujando hacia fuera.
