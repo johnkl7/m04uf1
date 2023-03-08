@@ -154,14 +154,27 @@ Al principio solo habia 3 TLDs :
 Ponemos **WWW** para diferenciarlos del resto de servicios. Antes se podia acceder por el navegador a una web y utilizar FTP para transferir archivos (*ftp.ubuntu.com*). WWW remarca que cuando nos conectamos a esa direccion, con ese prefijo, nos vamos a conectar al puerto **80** .
 Actualmente si por ejemplo entramos a enti.cat, el navegador utiliza HTTPS (no HTTP) y utiliza el puerto correspondiente. Hoy en dia no se le da importancia a veces a WWW. Lo mas habitual es:
 
-* Mantenerlo que y que se vea.
+* Mantenerlo y que se vea.
 * Hacer una redireccion de salto.
 
 
+### Empezando HTML (HTML 5 o LIFE SCHEME)
 
+> Life scheme hace referencia a que esta continuamente evolucionando.
+Internet explorer estuvo en guerra con Netscape, y se lo cargo.
+Cuando murio Netscape, fue liberado por la fundacion Mozilla. Su objetivo es hacer un navegador que respete los estandares web. Despues salion Opera, Chrome y todos sus derivados.
+>Firefox no depende de ninguna compañia (es open-source).
+>Opera no es muy fiable por temas de seguridad.
 
+Hoy en dia todos respetan bastante el Life scheme.
 
+Durante el HMTL4 y el LIFE SCHEME (5) hubo otro. XHTML, que consistia en:
 
+* Una mezla de XML y DTD.
+* Algunas mejoras de HTML4.
 
+>Netscape habia hecho tambien el motor, que hacer que interpretara las malas practicas del Microsoft fue imposible, y murio.
+
+**Todos los documentos HTML empiezan con un *index.html***.
 
 
