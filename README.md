@@ -229,10 +229,15 @@ Ejemplo:
 ```
 
 ### ENLACES
-* ```<a></a>``` : La etiqueta "a" se utiliza para realizar enlaces, para el **hipertexto**.
+* ```<a></a>``` : La etiqueta "a" se utiliza para realizar enlaces, para el **hipertexto**. Esta etiquetas son elementos en linea por lo tanto, van dentro de bloques nunca primero.
 * Se utiliza **href** para hacer referencia al enlace.
 * Se utiliza **alt** para insertar un texto alternativo.
 * Con el **title** es el texto que sale cuando pasamos el raton por encima.
 
 El texto alternativo sirve para que el enlace siga funcionando aunque la imagen no carge.
 
+
+### BLOQUES LOGICOS
+* ```<header></header>```
+* ```<main></main>```
+* ```<footer></footer>```
