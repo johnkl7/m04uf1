@@ -238,6 +238,13 @@ El texto alternativo sirve para que el enlace siga funcionando aunque la imagen 
 
 
 ### BLOQUES LOGICOS
+
 * ```<header></header>```
 * ```<main></main>```
 * ```<footer></footer>```
+* ```<nav></nav>```
+* ```<style></style>``` : Esta etiqueta nos permite cambiar el estilo. Se utiliza con **CSS**
+
+Todo elemento de bloque tiene:
+* MARGIN: Margen exterior.
+* PADDING: Margen interior.
