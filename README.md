@@ -176,7 +176,9 @@ Durante el HMTL4 y el LIFE SCHEME (5) hubo otro. XHTML, que consistia en:
 * Algunas mejoras de HTML4.
 
 >Netscape habia hecho tambien el motor, que hacer que interpretara las malas practicas del Microsoft fue imposible, y murio.
+![IE vs NS](https://www.mindfiresolutions.com/blog/wp-content/uploads/netsVsIE11.png)
 
 **Todos los documentos HTML empiezan con un *index.html***.
-
+Todo texto , todo elemento tiene que ir dentro de una etiqueta de bloque. Esta seria la etiqueta de párrafo:
+<p> ola k ase  </p>
 
