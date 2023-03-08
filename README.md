@@ -3,8 +3,7 @@ Ciberseguridad: Lenguaje de marcas m04uf1
 
 ## XML - _Aqui iran los apuntes de **XML**_
 
-### QUE ES XML
-El lenguaje de marcado extensible (XML) permite definir y almacenar datos de forma compartible. XML admite el intercambio de información entre sistemas de computación, como sitios web, bases de datos y aplicaciones de terceros. Las reglas predefinidas facilitan la transmisión de datos como archivos XML a través de cualquier red, ya que el destinatario puede usar esas reglas para leer los datos de forma precisa y eficiente.
+n entre sistemas de computación, como sitios web, bases de datos y aplicaciones de terceros. Las reglas predefinidas facilitan la transmisión de datos como archivos XML a través de cualquier red, ya que el destinatario puede usar esas reglas para leer los datos de forma precisa y eficiente.
 
 ### EJEMPLO DE CODIGO XML
 
@@ -51,7 +50,9 @@ Los _apuntes_ de DTD
 
 
 
+
 ## MARKDOWN
+Markdown es un lenguaje de documentacion
 
 ### LISTAS
 
@@ -129,6 +130,32 @@ println("You entered = $integer)}
 \# ejemplo de escapado
 
 \*que en otras cosas*
+
+
+## HTML (Hypertext Markup Language)
+
+Se creo para usarse con HTTP. 
+* HTTP salio en 1991.
+* HTML en el 1993.
+>En 1991 Tim Berners-Lee creo HTTP y con ello las bases de HTML. Hasta ese entonces (1991) no habia herramientas para comunicarse o transferir información por Internet.
+
+
+### WWW
+
+Antes de saber acerca de WWW (www.google.es), tenemos que saber que es el **.es**. A esto se le llama TLD (Top level domain). Cuando introducimos una pagina web como la anterior en el navegador, lo primero que se lee es el **.es** .
+>El DNS se guarda el TLD, de esta manera es mas rapido y mas fácil de clasificar. Todos los servidores de DNS empiezan a leer por el TLD.
+Al principio solo habia 3 TLDs : 
+* .com 
+* .edu 
+* .net
+
+**Todos ellos pertenecian a Estados Unidos, que se los quisieron quedar para ellos aunque al final no pudieron**
+
+Ponemos **WWW** para diferenciarlos del resto de servicios. Antes se podia acceder por el navegador a una web y utilizar FTP para transferir archivos (*ftp.ubuntu.com*). WWW remarca que cuando nos conectamos a esa direccion, con ese prefijo, nos vamos a conectar al puerto **80** .
+
+
+
+
 
 
 
