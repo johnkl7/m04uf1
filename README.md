@@ -161,8 +161,10 @@ Actualmente si por ejemplo entramos a enti.cat, el navegador utiliza HTTPS (no H
 ### Empezando HTML (HTML 5 o LIFE SCHEME)
 
 > Life scheme hace referencia a que esta continuamente evolucionando.
+---
 Internet explorer estuvo en guerra con Netscape, y se lo cargo.
 Cuando murio Netscape, fue liberado por la fundacion Mozilla. Su objetivo es hacer un navegador que respete los estandares web. Despues salion Opera, Chrome y todos sus derivados.
+---
 >Firefox no depende de ninguna compañia (es open-source).
 >Opera no es muy fiable por temas de seguridad.
 
