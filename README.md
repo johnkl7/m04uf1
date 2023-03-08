@@ -197,5 +197,23 @@ Todo documento HTML tiene una etiqueta raiz. La etiqueta raiz de HTML es ```**<h
 La primera linea de todas es el DTD. Esta linea la tiene que tener todo documento HTML. Si no introducimos esta linea habra problemas de **compatibilidad y lo interpretara mal**.
 > ```<!DOCTYPE html>```
 
+* ```<marquee></marquee>``` : Con esta etiqueta se mueve el texto por la pantalla. 
+* ```<blink></blink>``` : Con esta etiqueta el texto parpadea.
 
-![sds](https://ibb.co/12zWXp7)
+* Elementos en bloque: h1,h2,p ... Los elementos en bloque fuerzan el salto de linea.
+* Elementos en linea : strong,em ...
+
+Las etiquetas **ul** se utilizan para hacer listas. 
+* ```<ul></ul>``` : lista
+* ```<li></li>``` : li se utiliza para los elementos de la lista. (list elements)
+
+Ejemplo:
+``` HTML <ul>
+	<li>Manzanas</li>
+	<li>Peras</li>
+	<li>Limones</li>
+</ul>
+```
+
+
+
