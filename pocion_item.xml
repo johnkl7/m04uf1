@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<item>
+	<name>Pocion</name>
+	<weight>0.5</weight>
+	<rarity>10</rarity>
+	<cost>10</cost>
+	<consumable>1</consumable>
+	<durability>100</durability>
+	<uses>10</uses>
+	<level_min>1</level_min>
+	<hp>10</hp>
+	<mp>0</mp>
+	<key>0</key>
+	<class>Luz</class>
+	<description>Ilumina</description>
+</item>

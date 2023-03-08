@@ -1,0 +1,26 @@
+<!DOCTYPE items SYSTEM "items.dtd">
+
+<!ELEMENT weapons (weapon)>
+<!ELEMENT weapon (name, physical_damage, physical_defense, magical_damage, magical_defense, level, level_min, rarirty, cost, hands, weight, durability, uses, ammo, ammo_max, class, element, description)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT physical_damage (#PCDATA)>
+<!ELEMENT physical_defense (#PCDATA)>
+<!ELEMENT magical_damage (#PCDATA)>
+<!ELEMENT magical_defense (#PCDATA)>
+<!ELEMENT level (#PCDATA)>
+<!ELEMENT level_min (#PCDATA)>
+<!ELEMENT rarirty (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+<!ELEMENT hands (#PCDATA)>
+<!ELEMENT weight (#PCDATA)>
+<!ELEMENT durability (#PCDATA)>
+<!ELEMENT uses (#PCDATA)>
+<!ELEMENT ammo (#PCDATA)>
+<!ELEMENT ammo_max (#PCDATA)>
+<!ELEMENT class (#PCDATA)>
+<!ELEMENT element (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+
+<!ATTLIST weapon id_weapon CDATA #REQUIRED>
+<!ATTLIST name name CDATA #REQUIRED>

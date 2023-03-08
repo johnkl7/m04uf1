@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<item>
+	<name>Balon de oro</name>
+	<weight>50</weight>
+	<rarity>1000</rarity>
+	<cost>1000000</cost>
+	<consumable>0</consumable>
+	<durability>10000</durability>
+	<uses>100000</uses>
+	<level_min>10</level_min>
+	<hp>10000</hp>
+	<mp>1000</mp>
+	<key>1</key>
+	<class>Jugador</class>
+	<description>De oro</description>
+</item>
