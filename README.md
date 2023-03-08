@@ -225,3 +225,5 @@ Ejemplo:
 * ```<a></a>``` : La etiqueta "a" se utiliza para realizar enlaces, para el **hipertexto**.
 * Se utiliza **href** para hacer referencia al enlace.
 
+El texto alternativo sirve para que el enlace siga funcionando aunque la imagen no carge.
+
