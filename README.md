@@ -211,7 +211,7 @@ La primera linea de todas es el DTD. Esta linea la tiene que tener todo document
 Las etiquetas **ul** se utilizan para hacer listas. 
 * ```<ul></ul>``` : lista sin ordenar (**unordered list**)
 * ```<ol></ol>``` : lista ordenada (**ordered list**)
-* ```<li></li>``` : li se utiliza para los elementos de la lista. (list elements)
+* ```<li></li>``` : li se utiliza para los elementos de la lista. (**list elements**)
 
 Ejemplo:
 ```HTML 
@@ -220,6 +220,12 @@ Ejemplo:
 	<li>Peras</li>
 	<li>Limones</li>
 </ul>
+
+<ol>
+	<li>Limones</li>
+	<li>Arbol</li>
+	<li>Naranja</li>
+</ol>
 ```
 
 ### ENLACES
