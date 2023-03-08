@@ -178,6 +178,8 @@ Durante el HMTL4 y el LIFE SCHEME (5) hubo otro. XHTML, que consistia en:
 >Netscape habia hecho tan bien el motor, que hacer que interpretara las malas practicas del Microsoft fue imposible, y murio.
 ![IE vs NS](https://www.mindfiresolutions.com/blog/wp-content/uploads/netsVsIE11.png)
 
+### ETIQUETAS
+
 **Todos los documentos HTML empiezan con un *index.html***.
 Todo texto , todo elemento tiene que ir dentro de una etiqueta de bloque. Esta seria la etiqueta de párrafo:
 * ```<p>ola k ase</p>```
@@ -200,10 +202,12 @@ La primera linea de todas es el DTD. Esta linea la tiene que tener todo document
 * ```<marquee></marquee>``` : Con esta etiqueta se mueve el texto por la pantalla. 
 * ```<blink></blink>``` : Con esta etiqueta el texto parpadea.
 
-**TIPOS DE ELEMENTOS**
+### TIPOS DE ELEMENTOS
 * Elementos en bloque: h1,h2,p ... Los elementos en bloque fuerzan el salto de linea.
 * Elementos en linea : strong,em ...
 
+
+### LISTAS
 Las etiquetas **ul** se utilizan para hacer listas. 
 * ```<ul></ul>``` : lista
 * ```<li></li>``` : li se utiliza para los elementos de la lista. (list elements)
@@ -217,6 +221,7 @@ Ejemplo:
 </ul>
 ```
 
+### ENLACES
 * ```<a></a>``` : La etiqueta "a" se utiliza para realizar enlaces, para el **hipertexto**.
 * Se utiliza **href** para hacer referencia al enlace.
 
