@@ -200,6 +200,7 @@ La primera linea de todas es el DTD. Esta linea la tiene que tener todo document
 * ```<marquee></marquee>``` : Con esta etiqueta se mueve el texto por la pantalla. 
 * ```<blink></blink>``` : Con esta etiqueta el texto parpadea.
 
+**TIPOS DE ELEMENTOS**
 * Elementos en bloque: h1,h2,p ... Los elementos en bloque fuerzan el salto de linea.
 * Elementos en linea : strong,em ...
 
@@ -216,5 +217,6 @@ Ejemplo:
 </ul>
 ```
 
-
+* ```<a></a>```` : La etiqueta "a" se utiliza para realizar enlaces, para el **hipertexto**.
+* Se utiliza **href** para hacer referencia al enlace.
 
