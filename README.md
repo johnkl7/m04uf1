@@ -175,7 +175,7 @@ Durante el HMTL4 y el LIFE SCHEME (5) hubo otro. XHTML, que consistia en:
 * Una mezla de XML y DTD.
 * Algunas mejoras de HTML4.
 
->Netscape habia hecho tambien el motor, que hacer que interpretara las malas practicas del Microsoft fue imposible, y murio.
+>Netscape habia hecho tan bien el motor, que hacer que interpretara las malas practicas del Microsoft fue imposible, y murio.
 ![IE vs NS](https://www.mindfiresolutions.com/blog/wp-content/uploads/netsVsIE11.png)
 
 **Todos los documentos HTML empiezan con un *index.html***.
@@ -217,6 +217,6 @@ Ejemplo:
 </ul>
 ```
 
-* ```<a></a>```` : La etiqueta "a" se utiliza para realizar enlaces, para el **hipertexto**.
+* ```<a></a>``` : La etiqueta "a" se utiliza para realizar enlaces, para el **hipertexto**.
 * Se utiliza **href** para hacer referencia al enlace.
 
