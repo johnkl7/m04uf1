@@ -181,5 +181,5 @@ Durante el HMTL4 y el LIFE SCHEME (5) hubo otro. XHTML, que consistia en:
 **Todos los documentos HTML empiezan con un *index.html***.
 Todo texto , todo elemento tiene que ir dentro de una etiqueta de bloque. Esta seria la etiqueta de párrafo:
 * ```<p>ola k ase</p>```
-Para poner un texto en cursiva utilizamos </em>, la semantica es lo que aporto HTML 5.
+Para poner un texto en cursiva utilizamos ```</em>```, la semantica es lo que aporto HTML 5.
 
