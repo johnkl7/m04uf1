@@ -182,4 +182,20 @@ Durante el HMTL4 y el LIFE SCHEME (5) hubo otro. XHTML, que consistia en:
 Todo texto , todo elemento tiene que ir dentro de una etiqueta de bloque. Esta seria la etiqueta de párrafo:
 * ```<p>ola k ase</p>```
 Para poner un texto en cursiva utilizamos ```</em>```, la semantica es lo que aporto HTML 5.
+* ```<h1></h1>``` : Cabeza numero 1.
+* ```<h2></h2>``` : Cabezera numero 2.
 
+Todo documento HTML tiene una etiqueta raiz. La etiqueta raiz de HTML es ```**<html></html>**``` . Pero a la vez dentro de todo documento HTML, tiene que haber dos etiquetas mas obligatorias:
+
+* ```<head></head>``` : Va la información de como se tiene que interpretar cosas dentro del body o de la página misma.
+* ```<body></body>``` : Abre y cierra los contenidos.
+
+>Head y body son etiquetas hermanas o siblings en inglés ,ya que estan en la misma parte del arbol. Las etiquetas que estan en el mismo nivel son etiquetas hermanas.
+
+* ```<title></title>``` : Se utiliza para el titulo de la pestaña.
+
+La primera linea de todas es el DTD. Esta linea la tiene que tener todo documento HTML. Si no introducimos esta linea habra problemas de **compatibilidad y lo interpretara mal**.
+> ```<!DOCTYPE html>```
+
+
+![sds](https://ibb.co/12zWXp7)
