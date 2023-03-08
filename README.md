@@ -209,7 +209,8 @@ La primera linea de todas es el DTD. Esta linea la tiene que tener todo document
 
 ### LISTAS
 Las etiquetas **ul** se utilizan para hacer listas. 
-* ```<ul></ul>``` : lista
+* ```<ul></ul>``` : lista sin ordenar (**unordered list**)
+* ```<ol></ol>``` : lista ordenada (**ordered list**)
 * ```<li></li>``` : li se utiliza para los elementos de la lista. (list elements)
 
 Ejemplo:
@@ -224,6 +225,8 @@ Ejemplo:
 ### ENLACES
 * ```<a></a>``` : La etiqueta "a" se utiliza para realizar enlaces, para el **hipertexto**.
 * Se utiliza **href** para hacer referencia al enlace.
+* Se utiliza **alt** para insertar un texto alternativo.
+* Con el **title** es el texto que sale cuando pasamos el raton por encima.
 
 El texto alternativo sirve para que el enlace siga funcionando aunque la imagen no carge.
 
