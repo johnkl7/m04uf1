@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<item>
+	<name>Chicles</name>
+	<weight>0.05</weight>
+	<rarity>1</rarity>
+	<cost>0.1</cost>
+	<consumable>1</consumable>
+	<durability>1</durability>
+	<uses>1</uses>
+	<level_min>1</level_min>
+	<hp>10</hp>
+	<mp>0</mp>
+	<key>0</key>
+	<class>Comida</class>
+	<description>De menta</description>
+</item>

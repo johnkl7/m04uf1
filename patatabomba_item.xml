@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<item>
+	<name></name>
+	<weight></weight>
+	<rarity></rarity>
+	<cost></cost>
+	<consumable></consumable>
+	<durability></durability>
+	<uses></uses>
+	<level_min></level_min>
+	<hp></hp>
+	<mp></mp>
+	<key></key>
+	<class></class>
+	<description></description>
+</item>

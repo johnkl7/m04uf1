@@ -3,8 +3,7 @@ Ciberseguridad: Lenguaje de marcas m04uf1
 
 ## XML - _Aqui iran los apuntes de **XML**_
 
-### QUE ES XML
-El lenguaje de marcado extensible (XML) permite definir y almacenar datos de forma compartible. XML admite el intercambio de información entre sistemas de computación, como sitios web, bases de datos y aplicaciones de terceros. Las reglas predefinidas facilitan la transmisión de datos como archivos XML a través de cualquier red, ya que el destinatario puede usar esas reglas para leer los datos de forma precisa y eficiente.
+n entre sistemas de computación, como sitios web, bases de datos y aplicaciones de terceros. Las reglas predefinidas facilitan la transmisión de datos como archivos XML a través de cualquier red, ya que el destinatario puede usar esas reglas para leer los datos de forma precisa y eficiente.
 
 ### EJEMPLO DE CODIGO XML
 
@@ -51,7 +50,9 @@ Los _apuntes_ de DTD
 
 
 
+
 ## MARKDOWN
+Markdown es un lenguaje de documentacion
 
 ### LISTAS
 
@@ -131,6 +132,121 @@ println("You entered = $integer)}
 \*que en otras cosas*
 
 
+## HTML (Hypertext Markup Language)
+
+Se creo para usarse con HTTP. 
+* HTTP salio en 1991.
+* HTML en el 1993.
+>En 1991 Tim Berners-Lee creo HTTP y con ello las bases de HTML. Hasta ese entonces (1991) no habia herramientas para comunicarse o transferir información por Internet.
 
 
+### WWW
 
+Antes de saber acerca de WWW (www.google.es), tenemos que saber que es el **.es**. A esto se le llama TLD (Top level domain). Cuando introducimos una pagina web como la anterior en el navegador, lo primero que se lee es el **.es** .
+>El DNS se guarda el TLD, de esta manera es mas rapido y mas fácil de clasificar. Todos los servidores de DNS empiezan a leer por el TLD.
+Al principio solo habia 3 TLDs : 
+* .com 
+* .edu 
+* .net
+
+**Todos ellos pertenecian a Estados Unidos, que se los quisieron quedar para ellos aunque al final no pudieron**
+
+Ponemos **WWW** para diferenciarlos del resto de servicios. Antes se podia acceder por el navegador a una web y utilizar FTP para transferir archivos (*ftp.ubuntu.com*). WWW remarca que cuando nos conectamos a esa direccion, con ese prefijo, nos vamos a conectar al puerto **80** .
+Actualmente si por ejemplo entramos a enti.cat, el navegador utiliza HTTPS (no HTTP) y utiliza el puerto correspondiente. Hoy en dia no se le da importancia a veces a WWW. Lo mas habitual es:
+
+* Mantenerlo y que se vea.
+* Hacer una redireccion de salto.
+
+
+### Empezando HTML (HTML 5 o LIFE SCHEME)
+
+> Life scheme hace referencia a que esta continuamente evolucionando.
+---
+Internet explorer estuvo en guerra con Netscape, y se lo cargo.
+Cuando murio Netscape, fue liberado por la fundacion Mozilla. Su objetivo es hacer un navegador que respete los estandares web. Despues salion Opera, Chrome y todos sus derivados.
+
+>Firefox no depende de ninguna compañia (es open-source).
+>Opera no es muy fiable por temas de seguridad.
+
+Hoy en dia todos respetan bastante el Life scheme.
+
+Durante el HMTL4 y el LIFE SCHEME (5) hubo otro. XHTML, que consistia en:
+
+* Una mezla de XML y DTD.
+* Algunas mejoras de HTML4.
+
+>Netscape habia hecho tan bien el motor, que hacer que interpretara las malas practicas del Microsoft fue imposible, y murio.
+![IE vs NS](https://www.mindfiresolutions.com/blog/wp-content/uploads/netsVsIE11.png)
+
+### ETIQUETAS
+
+**Todos los documentos HTML empiezan con un *index.html***.
+Todo texto , todo elemento tiene que ir dentro de una etiqueta de bloque. Esta seria la etiqueta de párrafo:
+* ```<p>ola k ase</p>```
+Para poner un texto en cursiva utilizamos ```</em>```, la semantica es lo que aporto HTML 5.
+* ```<h1></h1>``` : Cabeza numero 1.
+* ```<h2></h2>``` : Cabezera numero 2.
+
+Todo documento HTML tiene una etiqueta raiz. La etiqueta raiz de HTML es ```**<html></html>**``` . Pero a la vez dentro de todo documento HTML, tiene que haber dos etiquetas mas obligatorias:
+
+* ```<head></head>``` : Va la información de como se tiene que interpretar cosas dentro del body o de la página misma.
+* ```<body></body>``` : Abre y cierra los contenidos.
+
+>Head y body son etiquetas hermanas o siblings en inglés ,ya que estan en la misma parte del arbol. Las etiquetas que estan en el mismo nivel son etiquetas hermanas.
+
+* ```<title></title>``` : Se utiliza para el titulo de la pestaña.
+
+La primera linea de todas es el DTD. Esta linea la tiene que tener todo documento HTML. Si no introducimos esta linea habra problemas de **compatibilidad y lo interpretara mal**.
+> ```<!DOCTYPE html>```
+
+* ```<marquee></marquee>``` : Con esta etiqueta se mueve el texto por la pantalla. 
+* ```<blink></blink>``` : Con esta etiqueta el texto parpadea.
+
+### TIPOS DE ELEMENTOS
+* Elementos en bloque: h1,h2,p ... Los elementos en bloque fuerzan el salto de linea.
+* Elementos en linea : strong,em ...
+
+
+### LISTAS
+Las etiquetas **ul** se utilizan para hacer listas. 
+* ```<ul></ul>``` : lista sin ordenar (**unordered list**)
+* ```<ol></ol>``` : lista ordenada (**ordered list**)
+* ```<li></li>``` : li se utiliza para los elementos de la lista. (**list elements**)
+
+Ejemplo:
+```HTML 
+<ul>
+	<li>Manzanas</li>
+	<li>Peras</li>
+	<li>Limones</li>
+</ul>
+
+<ol>
+	<li>Limones</li>
+	<li>Arbol</li>
+	<li>Naranja</li>
+</ol>
+```
+
+### ENLACES
+* ```<a></a>``` : La etiqueta "a" se utiliza para realizar enlaces, para el **hipertexto**. Esta etiquetas son elementos en linea por lo tanto, van dentro de bloques nunca primero.
+* Se utiliza **href** para hacer referencia al enlace.
+* Se utiliza **alt** para insertar un texto alternativo.
+* Con el **title** es el texto que sale cuando pasamos el raton por encima.
+
+El texto alternativo sirve para que el enlace siga funcionando aunque la imagen no carge.
+
+
+### BLOQUES LOGICOS
+
+* ```<header></header>```
+* ```<main></main>```
+* ```<footer></footer>```
+* ```<nav></nav>```
+* ```<style></style>``` : Esta etiqueta nos permite cambiar el estilo. Se utiliza con **CSS**
+
+Todo elemento de bloque tiene:
+* MARGIN: Margen exterior.
+* PADDING: Margen interior.
+
+>El body a su vez tiene su propio MARGIN. Esta empujando hacia fuera.
