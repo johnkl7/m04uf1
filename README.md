@@ -258,6 +258,6 @@ Todo elemento de bloque tiene:
 >El body a su vez tiene su propio MARGIN. Esta empujando hacia fuera.
 >HTML es la estrucutra, CSS la forma.
 
-*```<link />```: Esta etiqueta permite referenciar ciertas configuraciones como por ejemplo la configuracion de la etiqueta ```<style></style>``` o las hojas de estilo. Se utiliza **rel** para referenciar el nombre y **href** para introducir el nombre del archivo.
+* ```<link />```: Esta etiqueta permite referenciar ciertas configuraciones como por ejemplo la configuracion de la etiqueta ```<style></style>``` o las hojas de estilo. Se utiliza **rel** para referenciar el nombre y **href** para introducir el nombre del archivo.
 
 
