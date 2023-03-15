@@ -259,5 +259,7 @@ Todo elemento de bloque tiene:
 >HTML es la estrucutra, CSS la forma.
 
 * ```<link />```: Esta etiqueta permite referenciar ciertas configuraciones como por ejemplo la configuracion de la etiqueta ```<style></style>``` o las hojas de estilo. Se utiliza **rel** para referenciar el nombre y **href** para introducir el nombre del archivo.
+* display: Es como se muestran los elementos en bloque.
 
+Los elemenos en linea(```<a>```) no tienen margin, padding, width, height ...
 

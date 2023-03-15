@@ -8,7 +8,7 @@ h2{
 	}
 	
 p{
-	color:blue;
+	color:black;
 	}
 	
 h3 {
@@ -27,6 +27,8 @@ header p {
 color:#ffffff;
 padding:0 0 8px 0;
 text-align:center;
+margin:0;
+padding:8px 0 8px 0;
 }
 
 header h1 a {
@@ -64,3 +66,24 @@ background:#ffffff;
 color:#000000;
 }
 
+nav {
+	/* display:none; hace que se oculte el nav */
+	background-color:#aaaaaa
+}
+
+nav ul {
+	margin:0;
+	padding:0;
+	list-style:none; /* podemos poner urls para hacer iconos, square para cuadrados*/
+	color:red;
+}
+
+nav ul a {
+display:block;
+text-decoration:none;
+}
+nav ul a:hover{
+text-decoration:none;
+background-color:green;
+width:100%;
+}
