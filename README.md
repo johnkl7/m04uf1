@@ -202,6 +202,10 @@ La primera linea de todas es el DTD. Esta linea la tiene que tener todo document
 * ```<marquee></marquee>``` : Con esta etiqueta se mueve el texto por la pantalla. 
 * ```<blink></blink>``` : Con esta etiqueta el texto parpadea.
 * ```<blockquote></blockquote>``` : Es para hacer texto mas especial, como citas.
+* ```<form></form>```
+* ```<input></input>``` : Permite introducir valores.
+
+
 
 ### TIPOS DE ELEMENTOS
 * Elementos en bloque: h1,h2,p ... Los elementos en bloque fuerzan el salto de linea. Son como cajas.
@@ -270,6 +274,7 @@ Displays: Es como se muestran los elementos en bloque.
 
 Para definir variables en javascript se utiliza la palabra reservada "let". No se indica el tipo de dato con el que tratamos, por lo tanto, utiliza un **tipado debil**. Esto quiere decir que es posible cambiar el tipo de dato de una variable de manera directa.
 También se puede concatenar varios tipos de datos distintos.
+Todas las variables por defecto ya existen, lo que pasa que estan en estado "undefined" si no les asignas ningun valor.
 
 #### BUCLES
 
@@ -281,7 +286,7 @@ for (let i=0; i < 10; i++){
 
 ```js
 let valor1 = 10;
-	let valor2= 6;
+let valor2 = 6;
 	
 	if (valor1 == valor2){
 		console.log("Son iguales");
@@ -302,3 +307,17 @@ let contador = 0;
 	contador++;
 	}
 ```
+
+
+#### FUNCIONES
+
+```js
+function saluds (){
+	console.log("ola k ase");
+}
+saluda();	
+```
+
+En java script los parametros son opcionales, por general no usarlos dara error, pero muchas veces imprimira el resto del contenido. 
+
+
