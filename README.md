@@ -271,8 +271,34 @@ Displays: Es como se muestran los elementos en bloque.
 Para definir variables en javascript se utiliza la palabra reservada "let". No se indica el tipo de dato con el que tratamos, por lo tanto, utiliza un **tipado debil**. Esto quiere decir que es posible cambiar el tipo de dato de una variable de manera directa.
 También se puede concatenar varios tipos de datos distintos.
 
+#### BUCLES
+
 ```js
 for (let i=0; i < 10; i++){
 	console.log(i)
+	}
+```
+
+```js
+let valor1 = 10;
+	let valor2= 6;
+	
+	if (valor1 == valor2){
+		console.log("Son iguales");
+	}
+	else if (valor1 > valor2){
+		console.log("El valor1 es mayor");
+	}
+	else {
+		console.log("El valor2 es mayor")
+	}
+```
+
+
+```js
+let contador = 0;
+	while (contador < 10 ){
+	console.log(contador)
+	contador++;
 	}
 ```
