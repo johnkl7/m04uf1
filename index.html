@@ -56,8 +56,11 @@ alert("Nos estan hackeando");
 
 let the_grefg = 0;
 function cuenta () {
-the_grefg++;
-console.log(the_grefg);
+	the_grefg++;
+
+	document.getElementById("numerito").innerHTML += the_grefg + " ";
+
+	console.log(the_grefg);
 }	
 
 	</script>
@@ -70,8 +73,10 @@ console.log(the_grefg);
 	<h1><a href="index.html">John Largao</a></h1>
 	<p>Estudiante</p>
 </header>
+
 <form>
-	<input type="button" value="¡¡¡Clic!!!" onClick="alerta_maxima();"/>
+	<p id="numerito">0 </p>
+	<input type="button" value="¡¡¡Clic!!!" onClick="cuenta();"/>
 </form>
 
 <nav>

@@ -252,7 +252,14 @@ El texto alternativo sirve para que el enlace siga funcionando aunque la imagen 
 * ```<nav></nav>``` : Proporciona enlaces de navegación. Esta etiqueta puede estar en cualquier elemento. Dentro del de header, main, del footer.
 >Todas estas etiquetas son siblings.
 
-### CSS
+
+### ID
+
+ID identifica un elemento de una pagina de manera unica. Cada vez que queramos acceder a un elemento y sus propiedadades utilizaremos su ID.
+```<p id="numerito">ESTO ES EL HTML INTERNO DE P</p>```: INNERHTML es el texto interior que contiene.
+
+
+## CSS
 
 * ```<style></style>``` : Esta etiqueta nos permite cambiar el estilo. Se utiliza con **CSS**
 Todo elemento de bloque tiene:
@@ -260,7 +267,9 @@ Todo elemento de bloque tiene:
 * PADDING: Margen interior.
 >Las etiquetas que editamos dentro de la etiqueta style las llamamos **selectores**.
 >El body a su vez tiene su propio MARGIN. Esta empujando hacia fuera.
->HTML es la estrucutra, CSS la forma, javascript la acción.
+
+
+>HTML es la estrucutra, CSS la forma, javascript la acción. *Rafa Laguna 15/03/23*
 
 * ```<link />```: Esta etiqueta permite referenciar ciertas configuraciones como por ejemplo la configuracion de la etiqueta ```<style></style>``` o las hojas de estilo. Se utiliza **rel** para referenciar el nombre y **href** para introducir el nombre del archivo.
 Displays: Es como se muestran los elementos en bloque.
@@ -270,12 +279,12 @@ Displays: Es como se muestran los elementos en bloque.
 * FLEX : Cuando un elemento en bloque pasa a ser flexible los elementos en bloque que hay dentro se vuelven flexibles tambien.
 
 
-### JAVASCRIPT
+## JAVASCRIPT
 Para definir variables en javascript se utiliza la palabra reservada "let". No se indica el tipo de dato con el que tratamos, por lo tanto, utiliza un **tipado debil**. Esto quiere decir que es posible cambiar el tipo de dato de una variable de manera directa.
 También se puede concatenar varios tipos de datos distintos.
 Todas las variables por defecto ya existen, lo que pasa que estan en estado "undefined" si no les asignas ningun valor.
 
-#### BUCLES
+### BUCLES
 
 ```js
 for (let i=0; i < 10; i++){
@@ -308,7 +317,7 @@ let contador = 0;
 ```
 
 
-#### FUNCIONES
+### FUNCIONES
 
 ```js
 function saluds (){
@@ -320,8 +329,13 @@ saluda();
 En java script los parametros son opcionales, por general no usarlos dara error, pero muchas veces imprimira el resto del contenido. 
 
 
-#### EVENTOS
+### EVENTOS
 
 Javascript es un lenguaje orientado a objetos y eventos. Programamos cosas que esperan a que sucedan cosas o eventos.
 
-```<input type="button" value="¡¡¡Clic!!!" onClick="alerta_maxima();"/>``` : En este caso el evento seria CLICK.
+```<input type="button" value="¡¡¡Clic!!!" onClick="alerta_maxima();"/>``` : En este caso el evento seria CLICK, que lanza la función alerta_maxima.
+
+
+### VARIABLE DOCUMENT
+
+Contiene todos los elementos de la página. 
