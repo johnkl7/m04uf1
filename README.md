@@ -248,7 +248,7 @@ El texto alternativo sirve para que el enlace siga funcionando aunque la imagen 
 * ```<nav></nav>``` : Proporciona enlaces de navegación. Esta etiqueta puede estar en cualquier elemento. Dentro del de header, main, del footer.
 >Todas estas etiquetas son siblings.
 
-### ATRIBUTOS CSS
+### CSS
 
 * ```<style></style>``` : Esta etiqueta nos permite cambiar el estilo. Se utiliza con **CSS**
 Todo elemento de bloque tiene:
@@ -266,4 +266,13 @@ Displays: Es como se muestran los elementos en bloque.
 * FLEX : Cuando un elemento en bloque pasa a ser flexible los elementos en bloque que hay dentro se vuelven flexibles tambien.
 
 
+### JAVASCRIPT
 
+Para definir variables en javascript se utiliza la palabra reservada "let". No se indica el tipo de dato con el que tratamos, por lo tanto, utiliza un **tipado debil**. Esto quiere decir que es posible cambiar el tipo de dato de una variable de manera directa.
+También se puede concatenar varios tipos de datos distintos.
+
+```js
+for (let i=0; i < 10; i++){
+	console.log(i)
+	}
+```
