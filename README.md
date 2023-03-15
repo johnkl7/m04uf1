@@ -132,7 +132,7 @@ println("You entered = $integer)}
 \*que en otras cosas*
 
 
-## HTML (Hypertext Markup Language)
+## APUNTES HTML (Hypertext Markup Language)
 
 Se creo para usarse con HTTP. 
 * HTTP salio en 1991.
@@ -181,15 +181,15 @@ Durante el HMTL4 y el LIFE SCHEME (5) hubo otro. XHTML, que consistia en:
 ### ETIQUETAS
 
 **Todos los documentos HTML empiezan con un *index.html***.
-Todo texto , todo elemento tiene que ir dentro de una etiqueta de bloque. Esta seria la etiqueta de párrafo:
-* ```<p>ola k ase</p>```
+Todo texto , todo elemento tiene que ir dentro de una **etiqueta o elemento de bloque**. Esta seria la etiqueta de párrafo:
+* ```<p>ola k ase</p>``` 
 Para poner un texto en cursiva utilizamos ```</em>```, la semantica es lo que aporto HTML 5.
-* ```<h1></h1>``` : Cabeza numero 1.
-* ```<h2></h2>``` : Cabezera numero 2.
-
+* ```<h1></h1>``` : Cabeza numero 1. Es el titulo de la pagina.
+* ```<h2></h2>``` : Cabezera numero 2. Dentro de esta puede haber h3,h4...
+* ```<img />```: Para las imagenes, esta etiqueta se cierra solo con la contrabarra. Se utiliza **src** para indicar el link de la imagen.
 Todo documento HTML tiene una etiqueta raiz. La etiqueta raiz de HTML es ```**<html></html>**``` . Pero a la vez dentro de todo documento HTML, tiene que haber dos etiquetas mas obligatorias:
 
-* ```<head></head>``` : Va la información de como se tiene que interpretar cosas dentro del body o de la página misma. Aqui dentro van etiquetas como ```<title></title>``` , ```<style></style>```
+* ```<head></head>``` : Va la información de como se tiene que interpretar cosas dentro del body o de la página misma. Aqui dentro van etiquetas como ```<title></title>``` , ```<style></style>``` (*estas dos etiquetas son siblings ya que estan al mismo nivel*)
 * ```<body></body>``` : Abre y cierra los contenidos.
 
 >Head y body son etiquetas hermanas o siblings en inglés ,ya que estan en la misma parte del arbol. Las etiquetas que estan en el mismo nivel son etiquetas hermanas.
@@ -201,17 +201,18 @@ La primera linea de todas es el DTD. Esta linea la tiene que tener todo document
 
 * ```<marquee></marquee>``` : Con esta etiqueta se mueve el texto por la pantalla. 
 * ```<blink></blink>``` : Con esta etiqueta el texto parpadea.
+* ```<blockquote></blockquote>``` : Es para hacer texto mas especial, como citas.
 
 ### TIPOS DE ELEMENTOS
-* Elementos en bloque: h1,h2,p ... Los elementos en bloque fuerzan el salto de linea.
-* Elementos en linea : strong,em ...
+* Elementos en bloque: h1,h2,p ... Los elementos en bloque fuerzan el salto de linea. Son como cajas.
+* Elementos en linea : **strong**(hace el texto en negrita,refuerza el texto) , _em_ ... **Los elementos en linea van dentro de los elementos en bloque.**
 
 
 ### LISTAS
 Las etiquetas **ul** se utilizan para hacer listas. 
 * ```<ul></ul>``` : lista sin ordenar (**unordered list**)
 * ```<ol></ol>``` : lista ordenada (**ordered list**)
-* ```<li></li>``` : li se utiliza para los elementos de la lista. (**list elements**)
+* ```<li></li>``` : li se utiliza para los elementos de la lista. (**list item**). Siempre va dentro de o **ul** u **ol**.
 
 Ejemplo:
 ```HTML 
@@ -229,7 +230,7 @@ Ejemplo:
 ```
 
 ### ENLACES
-* ```<a></a>``` : La etiqueta "a" se utiliza para realizar enlaces, para el **hipertexto**. Esta etiquetas son elementos en linea por lo tanto, van dentro de bloques nunca primero.
+* ```<a></a>``` : La etiqueta "a" se utiliza para realizar enlaces, para el **hipertexto**. Es una etiqueta en linea. Se pueden incrustar imagenes, videos, audios etc.
 * Se utiliza **href** para hacer referencia al enlace.
 * Se utiliza **alt** para insertar un texto alternativo.
 * Con el **title** es el texto que sale cuando pasamos el raton por encima.
@@ -239,16 +240,24 @@ El texto alternativo sirve para que el enlace siga funcionando aunque la imagen 
 
 ### BLOQUES LOGICOS
 
-* ```<header></header>``` : Es una etiqueta semantica
-* ```<main></main>```
-* ```<footer></footer>```
-* ```<nav></nav>```
+* ```<header></header>``` : Es una etiqueta semantica, no aporta nada visual inicialmente. Header no es como ```<head>``` ,header esta ya dentro del body, es la "cabeza" del body.
+>**La semantica significa lo que es y lo que significa. Es el significado de lo que escribimos mas alla del propio texto.**
+---
+* ```<main></main>``` : Aqui van los contenidos del cuerpo.
+* ```<footer></footer>``` : Es el pie de página.
+* ```<nav></nav>``` : Proporciona enlaces de navegación. Esta etiqueta puede estar en cualquier elemento. Dentro del de header, main, del footer.
+>Todas estas etiquetas son siblings.
+
+### ATRIBUTOS CSS
+
 * ```<style></style>``` : Esta etiqueta nos permite cambiar el estilo. Se utiliza con **CSS**
-
 Todo elemento de bloque tiene:
-* MARGIN: Margen exterior.
+* MARGIN: Margen exterior. 16px(arriba) 0(derecha) 128px(abajo) 20px(izquierda). Funciona como las agujas del reloj. El **px** se tiene que especificar a no ser que el valor sea 0, ya que se puede trabajar con varias unidades a parte de px.
 * PADDING: Margen interior.
-
+>Las etiquetas que editamos dentro de la etiqueta style las llamamos **selectores**.
 >El body a su vez tiene su propio MARGIN. Esta empujando hacia fuera.
 >HTML es la estrucutra, CSS la forma.
+
+*```<link />```: Esta etiqueta permite referenciar ciertas configuraciones como por ejemplo la configuracion de la etiqueta ```<style></style>``` o las hojas de estilo. Se utiliza **rel** para referenciar el nombre y **href** para introducir el nombre del archivo.
+
 
