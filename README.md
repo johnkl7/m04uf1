@@ -260,7 +260,7 @@ Todo elemento de bloque tiene:
 * PADDING: Margen interior.
 >Las etiquetas que editamos dentro de la etiqueta style las llamamos **selectores**.
 >El body a su vez tiene su propio MARGIN. Esta empujando hacia fuera.
->HTML es la estrucutra, CSS la forma.
+>HTML es la estrucutra, CSS la forma, javascript la acción.
 
 * ```<link />```: Esta etiqueta permite referenciar ciertas configuraciones como por ejemplo la configuracion de la etiqueta ```<style></style>``` o las hojas de estilo. Se utiliza **rel** para referenciar el nombre y **href** para introducir el nombre del archivo.
 Displays: Es como se muestran los elementos en bloque.
@@ -271,7 +271,7 @@ Displays: Es como se muestran los elementos en bloque.
 
 
 ### JAVASCRIPT
-
+Javascript es un lenguaje orientado a objetos y eventos. Programamos cosas que esperan a que sucedan cosas.
 Para definir variables en javascript se utiliza la palabra reservada "let". No se indica el tipo de dato con el que tratamos, por lo tanto, utiliza un **tipado debil**. Esto quiere decir que es posible cambiar el tipo de dato de una variable de manera directa.
 También se puede concatenar varios tipos de datos distintos.
 Todas las variables por defecto ya existen, lo que pasa que estan en estado "undefined" si no les asignas ningun valor.
