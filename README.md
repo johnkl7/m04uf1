@@ -189,7 +189,7 @@ Para poner un texto en cursiva utilizamos ```</em>```, la semantica es lo que ap
 
 Todo documento HTML tiene una etiqueta raiz. La etiqueta raiz de HTML es ```**<html></html>**``` . Pero a la vez dentro de todo documento HTML, tiene que haber dos etiquetas mas obligatorias:
 
-* ```<head></head>``` : Va la información de como se tiene que interpretar cosas dentro del body o de la página misma.
+* ```<head></head>``` : Va la información de como se tiene que interpretar cosas dentro del body o de la página misma. Aqui dentro van etiquetas como ```<title></title>``` , ```<style></style>```
 * ```<body></body>``` : Abre y cierra los contenidos.
 
 >Head y body son etiquetas hermanas o siblings en inglés ,ya que estan en la misma parte del arbol. Las etiquetas que estan en el mismo nivel son etiquetas hermanas.
@@ -239,7 +239,7 @@ El texto alternativo sirve para que el enlace siga funcionando aunque la imagen 
 
 ### BLOQUES LOGICOS
 
-* ```<header></header>```
+* ```<header></header>``` : Es una etiqueta semantica
 * ```<main></main>```
 * ```<footer></footer>```
 * ```<nav></nav>```
@@ -250,3 +250,5 @@ Todo elemento de bloque tiene:
 * PADDING: Margen interior.
 
 >El body a su vez tiene su propio MARGIN. Esta empujando hacia fuera.
+>HTML es la estrucutra, CSS la forma.
+
