@@ -271,7 +271,6 @@ Displays: Es como se muestran los elementos en bloque.
 
 
 ### JAVASCRIPT
-Javascript es un lenguaje orientado a objetos y eventos. Programamos cosas que esperan a que sucedan cosas.
 Para definir variables en javascript se utiliza la palabra reservada "let". No se indica el tipo de dato con el que tratamos, por lo tanto, utiliza un **tipado debil**. Esto quiere decir que es posible cambiar el tipo de dato de una variable de manera directa.
 También se puede concatenar varios tipos de datos distintos.
 Todas las variables por defecto ya existen, lo que pasa que estan en estado "undefined" si no les asignas ningun valor.
@@ -321,3 +320,8 @@ saluda();
 En java script los parametros son opcionales, por general no usarlos dara error, pero muchas veces imprimira el resto del contenido. 
 
 
+#### EVENTOS
+
+Javascript es un lenguaje orientado a objetos y eventos. Programamos cosas que esperan a que sucedan cosas o eventos.
+
+```<input type="button" value="¡¡¡Clic!!!" onClick="alerta_maxima();"/>``` : En este caso el evento seria CLICK.
