@@ -4,7 +4,7 @@ h1 {
 	}
 	
 h2{
-	color:red;
+	color:black;
 	}
 	
 p{
@@ -12,11 +12,11 @@ p{
 	}
 	
 h3 {
-	color:red;
+	color:black;
 	}
 	
 ul {
-	border:2px dashed green;
+	border:2px solid black;
 	}
 	
 header {
@@ -72,18 +72,49 @@ nav {
 }
 
 nav ul {
+	display:flex;
+	flex-direction:row; /*row-reverse, column*/
+	/*justify-content:space-around;*/ /*center es otra opcion */
 	margin:0;
 	padding:0;
 	list-style:none; /* podemos poner urls para hacer iconos, square para cuadrados*/
 	color:red;
 }
 
-nav ul a {
+nav a {
 display:block;
 text-decoration:none;
-}
-nav ul a:hover{
-text-decoration:none;
-background-color:green;
+padding: 8px 16px 8px 16px;
+color:black;
 width:100%;
+text-align:center;
+}
+
+nav ul li{
+
+flex-grow:1; /* se dividen 1 a 1 */
+}
+
+nav  a:hover{
+/*text-decoration:none;*/
+background-color:orange;
+/*width:100%;*/
+}
+
+footer {
+background:radial-gradient(circle, #ffff00 0%, #ff0000 50%, #333333 100%); /*linear-gradient(45deg, */
+border-top:2px solid #000000;
+color:#ffffff;
+padding:32px 0 8px 0;
+text-align:center;
+}
+
+footer p {
+	margin:0;
+}
+
+
+main{
+	
+	padding:0 32px 0 32px;
 }

@@ -206,7 +206,7 @@ La primera linea de todas es el DTD. Esta linea la tiene que tener todo document
 ### TIPOS DE ELEMENTOS
 * Elementos en bloque: h1,h2,p ... Los elementos en bloque fuerzan el salto de linea. Son como cajas.
 * Elementos en linea : **strong**(hace el texto en negrita,refuerza el texto) , _em_ ... **Los elementos en linea van dentro de los elementos en bloque.**
-
+>Los elemenos en linea(```<a>```) no tienen margin, padding, width, height ...
 
 ### LISTAS
 Las etiquetas **ul** se utilizan para hacer listas. 
@@ -259,7 +259,11 @@ Todo elemento de bloque tiene:
 >HTML es la estrucutra, CSS la forma.
 
 * ```<link />```: Esta etiqueta permite referenciar ciertas configuraciones como por ejemplo la configuracion de la etiqueta ```<style></style>``` o las hojas de estilo. Se utiliza **rel** para referenciar el nombre y **href** para introducir el nombre del archivo.
-* display: Es como se muestran los elementos en bloque.
+Displays: Es como se muestran los elementos en bloque.
+* BLOCK 
+* INLINE
+* NONE
+* FLEX : Cuando un elemento en bloque pasa a ser flexible los elementos en bloque que hay dentro se vuelven flexibles tambien.
 
-Los elemenos en linea(```<a>```) no tienen margin, padding, width, height ...
+
 
