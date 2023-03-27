@@ -269,7 +269,7 @@ Todo elemento de bloque tiene:
 >El body a su vez tiene su propio MARGIN. Esta empujando hacia fuera.
 
 
->HTML es la estrucutra, CSS la forma, javascript la acción. *Rafa Laguna 15/03/23*
+>HTML es la estrucutra, CSS la forma, javascript la acción. 
 
 * ```<link />```: Esta etiqueta permite referenciar ciertas configuraciones como por ejemplo la configuracion de la etiqueta ```<style></style>``` o las hojas de estilo. Se utiliza **rel** para referenciar el nombre y **href** para introducir el nombre del archivo.
 Displays: Es como se muestran los elementos en bloque.

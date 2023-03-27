@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <title>John Largao: Estudiante de ENTI</title>
@@ -10,7 +10,7 @@
 
 <header>
 	<h1><a href="index.html">John Largao</a></h1>
-	<p>Estudiante</p>
+
 </header>
 
 <nav>
@@ -18,6 +18,7 @@
 		<li><a href="cv.html"><abbr title="Curriculum Vitae">CV</abbr></a></li>
 		<li><a href="hobbies.html">Hobbies</a></li>
 		<li><a href="contacto.html">Contacto</a></li>
+		<li><a href="game.html">Juego</a></li>
 	</ul>
 </nav>
 
@@ -36,3 +37,65 @@
 </body>
 </html>
 
+-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8" />
+	<title>John's Proyect</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header>
+		<h1><a href="index.html">John Largao</a></h1>
+	</header>	
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Portada</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a href="game.html">Juego</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+			
+		</ul>
+	</nav>
+
+	<main id="contact-main">
+		<h2>Formulario de contacto</h2>
+
+		<form>
+		<p><label for="nombre">Nombre:</label> <input type="text" name="contact_name" id="nombre" /></p>
+		<p><label for="apellido">Apellido:</label> <input type="text" name="contact_surname" id="surname" /></p>
+		<p><label for="gmail">Correo Electrónico:</label> <input type="email" name="contact_mail" id="email" /></p>
+		<p><label for="contraseña">Contraseñita:</label> <input type="password" name="contact_surname" id="surname" /></p>
+		<p><label for="fecha de nacimiento">Fecha de nacimiento:</label> <input type="date" name="contact_birthdate" id="birthdate" min="2005-01-01"/></p>
+		<p><label for="color de ojos">Color de ojos:</label> <input type="color" name="contact_eyes" id="eyes" /></p>
+		<p><label for="zodiaco">Signo zodiacal:</label> 	
+			<select name="contact_zodiaco" id="zodiaco">
+			<option value="aries">Aries</option>
+			<option value="tauro">Tauro</option>
+			<option value="geminis">Géminis</option>
+			<option value="cancer">Cáncer</option>
+			<option value="leo">Leo</option>
+			<option value="virgo">Virgo</option>
+			<option value="libra">Libra</option>
+			<option value="escorpio">Escorpio</option>
+			<option value="sagitario">Sagitario</option>
+			<option value="capricornio">Capricornio</option>
+			<option value="acuario">Acuario</option>
+			<option value="piscis">Piscis</option>
+		</select>
+		<p><input type="submit" value="Enviar" /></p>
+		</form>
+
+	</main>
+
+	<footer>
+	<h2>Información extra</h2>
+		<p>John Largao (c) 2023</p>
+	</footer>
+
+</body>
+</html>
