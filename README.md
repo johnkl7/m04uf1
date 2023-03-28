@@ -328,6 +328,12 @@ saluda();
 
 En java script los parametros son opcionales, por general no usarlos dara error, pero muchas veces imprimira el resto del contenido. 
 
+setInterval: Es una funcion que ejecutara algo especifico (una funcion, por ejemplo) que le pasamos por un paramatero, en el segundo parametro indicaremos los milisegundos que se utilizaran de intervalo. 
+```setInterval(cuenta,1000);```
+
+clearInterval: Con esta funcion se para el intervalo.
+
+>No se puede poner el mismo nombre a un id y una función.
 
 ### EVENTOS
 
@@ -339,3 +345,23 @@ Javascript es un lenguaje orientado a objetos y eventos. Programamos cosas que e
 ### VARIABLE DOCUMENT
 
 Contiene todos los elementos de la página. 
+
+### PROPIEDADES
+
+Cuando hacemos referencia a varias propiedas (color,background por ejemplo), a diferencia de CSS donde se separan con un guion, en javascript se escriben las dos palabras juntas con la primera letra de la segunda en mayuscula. ```.backgroundColor```
+
+style: Sirve para acceder a los estilos. contiene todos los estilos de un elemento incluso los que no estan seteados.
+* .color = color de la fuente.
+* .backgroundColor: para cambiar el color de fondo. 
+
+
+
+##JSON
+
+Con JSON abrimos y cerramos con llaves, no utilizamos etiquetas como en HTML.
+
+
+| Lenguaje | name | 
+| ---: | ---: |
+| HTML | <name></name>| 
+| JSON | "name" |
