@@ -360,8 +360,7 @@ style: Sirve para acceder a los estilos. contiene todos los estilos de un elemen
 
 Con JSON abrimos y cerramos con llaves, no utilizamos etiquetas como en HTML.
 
-
 | Lenguaje | name | 
 | ---: | ---: |
-| HTML | <name></name>| 
+| HTML | ```<name></name>```| 
 | JSON | "name" |
