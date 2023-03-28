@@ -364,3 +364,6 @@ Con JSON abrimos y cerramos con llaves, no utilizamos etiquetas como en HTML.
 | ---: | ---: |
 | HTML | ```<name></name>```| 
 | JSON | "name" |
+
+JSON es mas agil (es puro javascript), no se utilizan validadores, es por eso que en entornos de trabajo como bancos se utiliza html en vez de json. Muchos bancos y amazon tienen los datos
+almacenados en ambos (xml y json). Nos envian los archivos a nosotros en JSON para que sea mas rapido, pero cuando pasa algo tienen los datos guardados en HTML.
