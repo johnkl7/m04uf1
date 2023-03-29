@@ -259,7 +259,8 @@ ID identifica un elemento de una pagina de manera unica. Cada vez que queramos a
 ```<p id="numerito">ESTO ES EL HTML INTERNO DE P</p>```: INNERHTML es el texto interior que contiene.
 
 
-## CSS
+## CSS (CASCADE)
+Se decide "en cascada", porque todo va afectando a lo siguiente, no hace falta volver a definir las propiedades de una etiqueta de nuevo.
 
 * ```<style></style>``` : Esta etiqueta nos permite cambiar el estilo. Se utiliza con **CSS**
 Todo elemento de bloque tiene:
@@ -340,7 +341,7 @@ clearInterval: Con esta funcion se para el intervalo.
 Javascript es un lenguaje orientado a objetos y eventos. Programamos cosas que esperan a que sucedan cosas o eventos.
 
 ```<input type="button" value="¡¡¡Clic!!!" onClick="alerta_maxima();"/>``` : En este caso el evento seria CLICK, que lanza la función alerta_maxima.
-
+La etiqueta button tal cual actua como un submit. Para que el texto no desaparezca hay que poner **type="button"**.
 
 ### VARIABLE DOCUMENT
 
@@ -367,3 +368,28 @@ Con JSON abrimos y cerramos con llaves, no utilizamos etiquetas como en HTML.
 
 JSON es mas agil (es puro javascript), no se utilizan validadores, es por eso que en entornos de trabajo como bancos se utiliza html en vez de json. Muchos bancos y amazon tienen los datos
 almacenados en ambos (xml y json). Nos envian los archivos a nosotros en JSON para que sea mas rapido, pero cuando pasa algo tienen los datos guardados en HTML.
+
+### FUNCION FETCH
+
+JavaScript permite descargar archivos de nuestro servidor o otros de manera asíncrona para obtener datos. Significa que puede ocurrir independientemente del momento de la carga, cuando se llega al fetch dentro del codigo, se ejecuta
+otro hilo de ejecucion y fetch se ejecuta aparte y va haciendo sus cosas. De esta manera, el codigo no espera a que acabe el fetch, los dos hilos funcionan independientemente, fetch funcionando en segundo plano.
+Cuando una funcion asincrona termina no nos devuelve los datos directamente, lo hace de otra manera.
+
+
+### FUNCIONES ASINCRONA (SE MARCA ASI: ASYNC FUNCTION get_name(){...)
+
+Una función asincrona es una función que no tiene nombre. Se utiliza la palabra function directamente con los parametros.
+Utilizando **return response.json** nos devuelve un objeto JavaScript que después podemos utilizar. (solo si realmente es un archivo json)
+A continuacion, podemos utilizar **.then(function(data) { console.log(data); });** para devolver el objeto en si con los datos. (data,data.name,data.age etc.)
+Este objeto (data.name, por ejemplo) se puede utilizar como una variable para cambiar el valor de algun id.
+
+El valor que devuelven las funciones asincronas se devuelve como algo llamado "promesa". Las funciones asincronas **siempre** devuelven una promesa, y dentro de esta promesa
+estan los datos o el valor.
+
+>fetch es una funcion asincrona que devuelve una promesa, si todo ha ido bien la promesa retornara el vlaor y si no un error.
+>la funcion then se ejecuta si todo ha ido bien.
+
+
+### CORS
+
+Son un conjunto de normas que nos permiten conectarnos a un servidor remoto si este nos deja.
