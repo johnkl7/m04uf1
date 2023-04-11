@@ -70,7 +70,10 @@ text-align: center;
 
 
 body{
+	
 margin:0;
+background-color:grey;
+
 }
 
 h1,h2,h3,h4 {
@@ -96,7 +99,7 @@ color:#000000;
 
 nav {
 	/* display:none; hace que se oculte el nav */
-	background-color:#aaaaaa
+	background-color:orange;
 }
 
 
@@ -118,24 +121,121 @@ color:black;
 width:100%;
 text-align:center;
 }
-main img {
-	
+/*main img {
 	border-radius: 50%;
-}
+}*/
 
 li > img {
   display: block;
   margin: 0 auto;
 }
 
-main img:hover {
+
+
+
+#rafa {
+	
+	border-radius: 50%;
+
+}
+
+
+#rafa:hover{
+			
+	  border-radius: 50%;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(255, 102, 0, 1), 0px 0px 50px rgba(255, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+#pau {
+	
+	border-radius: 50%;
+
+}
+
+
+#pau:hover{
+			
+  border-radius: 50%;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(255, 102, 0, 1), 0px 0px 50px rgba(255, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+#ana {
+	
+	border-radius: 50%;
+
+}
+
+
+#ana:hover{
+			
+  border-radius: 50%;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(255, 102, 0, 1), 0px 0px 50px rgba(255, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+
+#oriol {
+	
+	border-radius: 50%;
+
+}
+
+
+#oriol:hover {
+    border-radius: 50%;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(255, 102, 0, 1), 0px 0px 50px rgba(255, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+#josue {
+	
+	border-radius: 50%;
+
+}
+
+
+#josue:hover{
+			
+  border-radius: 50%;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(255, 102, 0, 1), 0px 0px 50px rgba(255, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+
+/*#buscaminas:hover + #buscaminas-gif {
+  display: inline-block;
+}
+*/
+
+
+
+
+
+
+/*main img:hover {
 	border-radius: 50%;
   transform: scale(1.1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.5s ease;
   opacity: 0.2;
   cursor: pointer;
-}
+}*/
   
 
 nav li:hover a {
@@ -158,7 +258,8 @@ nav  a:hover{
 /*text-decoration:none;*/
 background-color:orange;
 /*width:100%;*/
-background: radial-gradient(circle, #ffff00 0%, #ff0000 30%, #333333 50%, #ff0000 70%, #ffff00 100%);
+background: orange;
+/*radial-gradient(circle, #ffff00 0%, #ff0000 30%, #333333 50%, #ff0000 70%, #ffff00 100%);*/
 }
 
 footer {
@@ -168,6 +269,7 @@ color:#ffffff;
 padding:32px 0 8px 0;
 text-align:center;
 background: radial-gradient(circle, #ffff00 0%, #ff0000 50%, #000000 60%);
+
 }
 
 footer p {
@@ -176,7 +278,7 @@ footer p {
 
 
 main{
-	
+
 	padding:0 32px 0 32px;
 }
 input[type="button"] {
@@ -185,4 +287,110 @@ input[type="button"] {
 	 cursor: pointer;
 }
 
+#character_list {
+display:flex;
+margin:0;
+padding:0;
+list-style:none;
+}
 
+#character_list button {
+padding:8px;
+border-radius:16px;
+border-bottom-left-radius:0;
+border-bottom-right-radius:0;
+border:0;
+background-color:#ccc;
+}
+
+#character_data {
+background-color:#ccc;
+min-height:400px;
+}
+
+
+#character_data ul {
+margin:0;
+}
+
+#character_list button:hover{
+cursor:pointer;
+background-color:orange;
+transform: scale(1.1);
+opacity: 0.9;
+font-weight: bold;
+animation-name:botones;
+animation-duration:2s;
+animation-iteratioSn-count:2;
+animation-direction:alternate;
+}
+@keyframes botones {
+from {background-color:orange;}
+to {background-color:yellow;}
+
+}
+#character_data li {
+    transition: transform 0.2s ease-out;
+}
+#character_data li {
+    transition: transform 0.2s ease-out;
+}
+
+#character_data li:hover {
+   /*transform: scale(1.2);*/
+    transform-origin: 0% 10%;	
+    transition: all 0.2.5s ease-in-out;
+    /*z-index: 1;*/
+}
+
+#character_data li:hover {
+    transform: scale(1.3);
+}
+
+#comentario {
+	display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+#buscaminas {
+  font-size: 28px;
+}
+
+#buscaminas a:hover{
+	
+    cursor:pointer;
+
+	
+}
+
+#protocolo {
+		font-size:28px;
+}
+
+#protocolo a:hover{
+	
+	cursor:pointer;
+}
+#footer1{
+    margin-top: 300px;
+	height:100px;
+}
+
+#footer2{
+		height:50px;
+}
+
+#footer3{
+	margin-top: 100px;
+}
+
+
+/*#main1{
+	
+	background-image:url(giphy.gif);
+background-repeat:no-repeat;
+background-size:128px;
+	opacity:0.2;
+}*/
