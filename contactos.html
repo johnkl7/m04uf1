@@ -3,32 +3,33 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-	<title>John's Proyect</title>
+	<title>Contacto</title>
 	<link rel="stylesheet" href="style.css" />
 </head>
-<body>
+
+<body id="bodycontactos">
 	<header>
 		<h1><img src="https://www.enriquedans.com/wp-content/uploads/2022/03/Anonymous.jpeg" alt="John Largao" width="100" height="100"><a href="index.html">John Largao</a></h1>
 	</header>	
-
-	<nav>
-		<ul>
-			
-			<li><a href="cv.html">CV</a></li>
-			<li><a href="game.html">Juego</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-			<li><a href="hobbies.html">Hobbies</a></li>
-		</ul>
-	</nav>
+	
+<nav>
+	<ul>
+		<li><a href="cv.html">CV</a></li> 
+		<li><a href="hobbies.html">Hobbies</a></li>
+		<li><a href="contactos.html">Contacto</a></li>
+		<li><a href="game.html">Juego</a></li>
+		<li><a href="proyectos.html">Proyectos</a></li>
+	</ul>
+</nav>
 
 	<main id="contact-main">
 	<h2>CONTACTO</h2>
-	<p>601 923 761</p>
+	<p>+34 600 000 001</p>
 	<p>john.largao@enti.cat</p>
 		<h2>Formulario de contacto</h2>
 		<form>
-		<p><label for="nombre">Nombre:</label> <input type="text" name="contact_name" id="nombre" /></p>
-		<p><label for="e-mail">Correo Electrónico:</label> <input type="email" name="contact_mail" id="email" /></p>
+		<p><label for="nombre">Nombre:</label> <input type="text" name="contact_name" id="nombre" required /></p>
+		<p><label for="e-mail">Correo Electrónico:</label> <input type="email" name="contact_mail" id="email" required /></p>
 		<label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
    
             <select id="country" name="country" class="form-control">
@@ -276,17 +277,16 @@
                 <option value="Yemen">Yemen</option>
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
-            </select>
+            </select></br>
+			</br>
 	
-		<label for="comentario">Comentario:</label><textarea name="contact_comment" id="comentario" rows="10"></textarea>
-		
+		<label for="comentario">Comentario:</label><textarea name="contact_comment" id="comentario" rows="10" required ></textarea>	
 		<p><input type="submit" value="Enviar" /></p>
 		</form>
 	</main>
-
-	<footer>
-	<h2>Información extra</h2>
-		<p>John Largao (c) 2023</p>
+</br></br></br></br></br></br></br></br></br></br></br>
+	<footer id="footer11">
+		<h2>John Largao (c) 2023</h2>
 	</footer>
 
 </body>

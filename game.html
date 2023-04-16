@@ -3,35 +3,95 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-	<title>John's Proyect</title>
-	<link rel="icon" id="logo" type="image/x-icon" href="logo.png">
+	<title>Juego de adivinanzas</title>
 	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+	<h1><img src="https://www.enriquedans.com/wp-content/uploads/2022/03/Anonymous.jpeg" alt="John Largao" width="100" height="100"><a href="index.html">John Largao</a></h1>
+</header>	
+
+<nav>
+	<ul>
+		<li><a href="cv.html">CV</a></li> 
+		<li><a href="hobbies.html">Hobbies</a></li>
+		<li><a href="contactos.html">Contacto</a></li>
+		<li><a href="game.html">Juego</a></li>
+		<li><a href="proyectos.html">Proyectos</a></li>
+	</ul>
+</nav>
+
+ <main>
+      <h1 id="juegos">JUEGOS!</h1>
+      	<form>
+		
+      	<h2>Adivina el numero</h2> 
+		<p>Se ha generado un número aleatorio entre el 1 y el 100, intenta adivinarlo.</p>
+		<p id="result">Introduce el número: </p>
+      	<p><input type="text" id="numero_jugador"/></p>
+      	<p><input type="button" value="¡Adivina!" onClick="check_number();" /></p>	 
+      	</form> 
+      
+      	<h2>Juego de Adivinanzas</h2>
+      	<p id="adivinanza"></p>
+      	<input type="text" id="respuesta">
+      	<button onclick="comprobarRespuesta()">Aceptar</button>
+      	<p id="resultado"></p>
+		
+      	</form>		
+ </main>
+
+
+
 <script>
-
-let numero =  Math.floor(Math.random()*100+1);
-let contador = 10;
-
-function cuenta () {
-	contador--;	
-	if (contador == -1){
-		document.getElementById("contador").innerHTML = "FIN DEL TIEMPO";
-		clearInterval(contador_interval);
-	}
-	else {
-		document.getElementById("contador").innerHTML = contador;
-	}
-}
-
-let contador_interval;
-
-function start_contador (){
-	 contador_interval = setInterval(cuenta,1000);
-}
+  let datosAdivinanzas = [];
+  let indiceAdivinanzaActual = null;
+  let numero =  Math.floor(Math.random()*100+1);
 
 
-function check_number (){
+  fetch("adivinanzas.json")
+    .then(response => response.json())
+    .then(data => {
+      datosAdivinanzas = data;
+    
+		    generarAdivinanzaAleatoria();
+    })
+    .catch(error => console.error(error));
 
-	console.log(numero);
+  function comprobarRespuesta() {
+    const respuestaInput = document.getElementById("respuesta");
+    const resultadoOutput = document.getElementById("resultado");
+    const respuestaEsperada = respuestaInput.getAttribute("data-respuesta");
+    const respuestaActual = respuestaInput.value.trim().toLowerCase();
+    if (respuestaActual === respuestaEsperada.toLowerCase()) {
+      resultadoOutput.textContent = "CORRECTO";
+     
+		  <!--  generarAdivinanzaAleatoria();-->
+    } else {
+      resultadoOutput.textContent = "INCORRECTO";
+    }
+  }
+
+  function generarAdivinanzaAleatoria() {
+ 
+    let indiceAleatorio = indiceAdivinanzaActual;
+    while (indiceAleatorio === indiceAdivinanzaActual) {
+      indiceAleatorio = Math.floor(Math.random() * datosAdivinanzas.length);
+    }
+    indiceAdivinanzaActual = indiceAleatorio;
+    const adivinanza = datosAdivinanzas[indiceAleatorio];
+    document.getElementById("adivinanza").textContent = adivinanza.adivinanza;
+    document.getElementById("respuesta").value = "";
+    document.getElementById("respuesta").setAttribute("data-respuesta", adivinanza.respuesta);
+    document.getElementById("resultado").textContent = "";
+  }
+
+
+	
+	function check_number (){
+
+			console.log(numero);
 	
 	let jugador = document.getElementById("numero_jugador").value;
 	console.log(jugador);
@@ -39,156 +99,27 @@ function check_number (){
 	let valor = parseInt(jugador);
 
 	if (isNaN(valor)){
-		document.getElementById("resultado").innerHTML = "<strong class=\"error\">ERROR</strong>";
+		document.getElementById("result").innerHTML = "<strong class=\"error\">ERROR</strong>";
 		return;
 	}
 
 	if (valor > numero) {
-		document.getElementById("resultado").innerHTML = ("<em>El numero " + valor + " es mayor</em>");
+		document.getElementById("result").innerHTML = ("<em>El numero " + valor + " es mayor</em>");
 	}
 	else if (valor < numero){
-		document.getElementById("resultado").innerHTML = ("<em>El numero " + valor + " es menor</em>");
+		document.getElementById("result").innerHTML = ("<em>El numero " + valor + " es menor</em>");
 	}
 	else{
-		document.getElementById("resultado").innerHTML = ("<strong>Acertaste!</strong>");
+		document.getElementById("result").innerHTML = ("<strong>Acertaste!</strong>");
 	}
 }
 
-
-function cambia () {
-	document.getElementById("buton_color").style.backgroundColor = "red";
-	document.getElementById("buton_color").style.color = "orange";
-}
-
-fetch("enbuscapaco.json").then(function(response){
-	return response.json();
-}).then(function(data){
-	console.log(data.name);
-});
-
-function carga_datos (id_character) {
-	fetch("https://johnkl7.github.io/character"+id_character+".json").then(function(response){
-		return response.json();
-	}).then(function(data){
-		let lista = "<ul>";
-		lista += "<li>Nombre: "+data.name+"</li>";
-		lista += "<li>Nick: "+data.nick2+"</li>";
-		lista += "<li>Age: "+data.age+"</li>";
-		lista += "<li>Race: "+data.race+"</li>";
-		lista += "<li>Class: "+data.class+"</li>";
-		lista += "<li>Gender: "+data.gender+"</li>";
-		lista += "<li>Height: "+data.height+"</li>";
-		lista += "<li>Weight: "+data.weight+"</li>";
-		lista += "<li>Language: "+data.language+"</li>";
-		lista += "<li>Country: "+data.country+"</li>";
-		lista += "<li>Description: "+data.description+"</li>";
-		lista += "</ul>";
-		console.log(lista);
-		document.getElementById("character_data").innerHTML = lista;
-	});	
-}
-
-
-
-
-
-
-/*function acertijo() {
-  fetch("adivinanzas.json")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      const randomIndex = Math.floor(Math.random() * data.length);
-      const randomAdivinanza = data[randomIndex];
-      const adivinanza = randomAdivinanza.adivinanza;
-      const answer = randomAdivinanza.respuestaa;
-      document.getElementById("pregunta").innerHTML = adivinanza;
-      
-      const inputField = document.getElementById("respuesta");
-      inputField.addEventListener("input", function() {
-        const larespuesta = inputField.value;
-        if (larespuesta === "") {
-          document.getElementById("correctoincorrecto").innerHTML = "No has escrito nada";
-        } else {
-          comprobacion(answer);
-        }
-      });
-    });
-}
-
-function comprobacion(answer) {
-  const larespuesta = document.getElementById("respuesta").value;
-  if (larespuesta != answer) {
-    document.getElementById("correctoincorrecto").innerHTML = "NOPE";
-  } else {
-    document.getElementById("correctoincorrecto").innerHTML = "CORRECTO";
-  }
-}*/
-
-
-
 </script>
-</head>
-<body id="game-page" >
-	<header>
-		<h1><img src="https://www.enriquedans.com/wp-content/uploads/2022/03/Anonymous.jpeg" alt="John Largao" width="100" height="100"><a href="index.html">John Largao</a></h1>
-	</header>	
-	<nav>
-		<ul>
-			
-			<li><a href="hobbies.html">Hobbies</a></li>
-			<li><a href="cv.html">CV</a></li>
-			<li><a href="game.html">Juego</a></li>
-			<li><a href="proyectos.html">Proyectos</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-		</ul>
-	</nav>
-	<main>
-		<h2 id="titulo_juego">Adivina el número entre el 1 y el 100</h2>
-		<form>
-			<p id="resultado">Introduce un número</p>
-			<p><input type="text" id="numero_jugador"/></p>
-			<p><input type="button" value="¡Adivina!" onClick="check_number();" /></p>
-			<p><input type="button" id="buton_color" value="¡CAMBIA DE COLOR!" onClick="cambia();"/></p>
-			<h2>CONTADOR</h2>
-			<p id="contador">0</p>
-			<p><input type="button" id="inicia_contador" onClick="start_contador();" value="Inicia el contador" /></p>		
-	 </form>
-
-	 <form id="characters">
-	 <h2>ESTADISTICAS</h2>
-	 <ul id="character_list">
-		<li><button type="button" id="character1" onClick="carga_datos(1);">Eustaquio</button></li>
-		<li><button type="button" id="character2" onClick="carga_datos(2);">Mariana</button></li>
-		<li><button type="button" id="character3" onClick="carga_datos(3);">Mortadelo</button></li>
-		<li><button type="button" id="character4" onClick="carga_datos(4);">Messi</button></li>
-	 </ul>
-	 <section id="character_data">
-	 
-	 </section>
-	 </form>
-	 
-	 
-
-<!--	<h2>ACERTIJOS</h2>
-	 <form>
-	 <button type="button" id="test" onClick="acertijo();">Empezamos o no!?</button>
-	 <p id="pregunta"></p>
-	 <p><input id="respuesta"/></p>	
-	 <p id="correctoincorrecto"></p>
-	 </form> -->
-		
-	
-	
-	 
-	 
-	 
-	 
-	</main>
-	<footer  id="footer2">
-		<p>John Largao (c) 2023</p>
-	</footer>
-
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<footer id="footerproyectos">
+	<h2>John Largao (c) 2023</h2>
+</footer>
 </body>
+
 </html>
+

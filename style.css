@@ -19,11 +19,17 @@ ul {
 	border:2px solid black;
 	}
 	
+	
+head {
+	
+		padding:0;
+}
 header {
   background-color: #101010;
   background: radial-gradient(circle, #ffff00 0%, #ff0000 50%, #000000 60%);
   display: flex;
   justify-content: center;
+  padding:3;
     
 }
 header img {
@@ -34,8 +40,8 @@ header img {
 }
 
 header img:hover{
-	 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.5s ease;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
 	opacity:1;
 	transform:rotate(360deg);
 }
@@ -66,13 +72,14 @@ margin:0;
 padding:20px;
 text-align: center;
 }
-
-
+ 
 
 body{
-	
+height:20px;
 margin:0;
-background-color:grey;
+ 
+  background-size: cover;
+ background-color:#ccc;
 
 }
 
@@ -114,7 +121,7 @@ nav ul {
 }
 
 nav a {
-display:block;
+
 text-decoration:none;
 padding: 8px 16px 8px 16px;
 color:black;
@@ -238,11 +245,11 @@ li > img {
 }*/
   
 
-nav li:hover a {
-  font-size: 1.1em; /* adjust the size as needed */
-  transition: font-size 0.1s ease-in-out; /* add a transition effect for a smoother animation */
+/* nav li:hover a {
+  font-size: 1.1em; /* adjust the size as needed 
+  transition: font-size 0.1s ease-in-out; /* add a transition effect for a smoother animation 
 }
-
+*/
 figure {
   display: flex;
   flex-direction: column;
@@ -251,14 +258,14 @@ figure {
 
 nav ul li{
 font-weight: bold;
-flex-grow:1; /* se dividen 1 a 1 */
+/*flex-grow:1;  se dividen 1 a 1 */
 }
 
 nav  a:hover{
 /*text-decoration:none;*/
-background-color:orange;
+
 /*width:100%;*/
-background: orange;
+
 /*radial-gradient(circle, #ffff00 0%, #ff0000 30%, #333333 50%, #ff0000 70%, #ffff00 100%);*/
 }
 
@@ -266,11 +273,14 @@ footer {
 
 border-top:2px solid #000000;
 color:#ffffff;
-padding:32px 0 8px 0;
+
+
+padding:0 0 0 0; 
 text-align:center;
 background: radial-gradient(circle, #ffff00 0%, #ff0000 50%, #000000 60%);
 
 }
+
 
 footer p {
 	margin:0;
@@ -278,7 +288,7 @@ footer p {
 
 
 main{
-
+	
 	padding:0 32px 0 32px;
 }
 input[type="button"] {
@@ -379,13 +389,119 @@ to {background-color:yellow;}
 }
 
 #footer2{
-		height:50px;
+		padding:20px;
 }
 
 #footer3{
-	margin-top: 100px;
+	padding:25px;
 }
 
+#football {
+  position: relative;
+}
+
+#main2 h3, #main2 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#main5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 71vh;
+}
+
+.container {
+  position: relative; z-index: 1;
+}
+
+.container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container:hover p{
+  opacity: 1;
+  
+}
+
+
+#football {
+  max-width: 100%;
+  height: auto;
+}
+ 
+#pelota{
+	opacity:1;
+	
+}
+ 
+
+#pelota:hover{
+	opacity:0.2;
+}
+
+
+#xi{
+	padding-left:50000;
+	opacity:1;
+}
+
+
+#xi:hover{
+	opacity:0.4;
+}
+
+
+
+#footer11 {
+	
+	padding:20px;
+}
+
+
+#footerindex{
+	
+	padding:20px;
+}
+
+
+#footercv{
+	
+		padding:10px;
+}
+
+#footerproyectos{
+	
+	padding:20px;
+}
+
+
+#juegos {
+  font-size: 20px;
+  transition: font-size 1s;
+  animation: grow 1s forwards;
+}
+
+@keyframes grow {
+  from { font-size: 10px; }
+  to { font-size: 40px; }
+}
+/*#main1 h1{
+	background-color:orange;
+	opacity:0.6;
+	box-shadow: 0px 0px 10px rgba(255, 102, 0, 1), 0px 0px 25px rgba(255, 0, 0, 1);
+	 border-radius: 5%;
+}*/
 
 /*#main1{
 	

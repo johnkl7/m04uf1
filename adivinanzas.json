@@ -5,7 +5,11 @@
   },
   {
     "adivinanza": "¿Qué juguete es el más egoísta?",
-    "respuesta": "yoyo."
+    "respuesta": "yoyo"
+  },
+  {
+	"adivinanza": "Puedes pararlo con una mano y pagarlo con la otra.",
+	"respuesta": "taxi"
   },
   {
     "adivinanza": "No muerde ni ladra, pero tiene dientes y la casa guarda. ¿Qué es?",
